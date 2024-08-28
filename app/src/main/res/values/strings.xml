@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Connect four</string>
+    <string name="play">Play</string>
+    <string name="connect_four">Connect Four</string>
+    <string name="hover_over_me">Hover Over Me</string>
+    <string name="i_disappear_on_hover">I disappear on hover!</string>
+</resources>
