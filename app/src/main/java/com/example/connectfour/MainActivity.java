@@ -42,7 +42,7 @@ public void animate(View view) {
                 @Override
                 public void run() {
                     // Change the text color to black
-                    textView.setTextColor(Color.BLACK);
+                    textView.setTextColor(Color.WHITE);
 
                     // Fade out the TextView after changing color
                     textView.animate()

@@ -4,4 +4,15 @@
     <string name="connect_four">Connect Four</string>
     <string name="hover_over_me">Hover Over Me</string>
     <string name="i_disappear_on_hover">I disappear on hover!</string>
+    <string name="gridsize">GridSize</string>
+    <string name="play1">Play</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="upload">Upload</string>
+    <string name="start">Start</string>
+
+    <string-array name="grid_sizes">
+        <item>8x7</item>
+        <item>6x5</item>
+        <item>7x6</item>
+    </string-array>
 </resources>
