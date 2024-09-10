@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grid_sizes">
+        <item>7x6 - Large</item>
+        <item>6x5 - Medium</item>
+        <item>8x7 - Small</item>
+    </string-array>
+
+    <string-array name="grid_names">
+        <item>Nepal</item>
+        <item>Bhutan</item>
+        <item>Australia</item>
+    </string-array>
+
+    <string-array name="game_modes">
+        <item>Multiplayer</item>
+        <item>Single Player</item>
+    </string-array>
+
+</resources>

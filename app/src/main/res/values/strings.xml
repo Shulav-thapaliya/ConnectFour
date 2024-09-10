@@ -9,10 +9,10 @@
     <string name="enter_your_name">Enter your name</string>
     <string name="upload">Upload</string>
     <string name="start">Start</string>
+    <string name="grid_size">Grid Size</string>
+    <string name="select_theme">Select Theme</string>
+    <string name="select_game_mode">Select Game Mode</string>
+    <string name="create_game">Create Game</string>
 
-    <string-array name="grid_sizes">
-        <item>8x7</item>
-        <item>6x5</item>
-        <item>7x6</item>
-    </string-array>
+
 </resources>

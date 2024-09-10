@@ -53,7 +53,7 @@ public void animate(View view) {
                                 public void run() {
                                     textView.setVisibility(View.GONE); // Make the TextView disappear
 //                                  Intent to start the new Activity
-                                    Intent intent = new Intent(MainActivity.this, Page2.class);
+                                    Intent intent = new Intent(MainActivity.this, grid_selection.class);
                                     startActivity(intent);
                                     finish();
                                 }
