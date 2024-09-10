@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="@drawable/gridsetting"
     android:gravity="center">
 
     <!-- Spinner for selecting grid sizes -->
@@ -11,14 +12,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/grid_size"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ghost2"
         android:layout_marginBottom="8dp"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
 
     <Spinner
         android:id="@+id/spinnerGridSize"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        />
+
 
     <!-- Spinner for selecting grid names/themes -->
     <TextView
@@ -27,7 +34,9 @@
         android:text="@string/select_theme"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
-        android:textSize="18sp"
+        android:fontFamily="@font/ghost2"
+        android:textColor="@color/black"
+        android:textSize="40sp"
         android:textStyle="bold"/>
 
     <Spinner
@@ -42,7 +51,9 @@
         android:layout_height="wrap_content"
         android:text="@string/select_game_mode"
         android:layout_marginBottom="8dp"
-        android:textSize="18sp"
+        android:fontFamily="@font/ghost2"
+        android:textColor="@color/black"
+        android:textSize="40sp"
         android:textStyle="bold"/>
 
     <Spinner
@@ -52,9 +63,12 @@
 
     <Button
         android:id="@+id/buttonCreateGameSettings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:text="@string/create_game"
+        android:fontFamily="@font/ghost2"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
         android:layout_marginTop="16dp"
         android:onClick="createGameSettings"/>
 

@@ -27,24 +27,24 @@ public class grid_selection extends AppCompatActivity {
 //        Spinner for the grid size
         spinnerGridSize = findViewById(R.id.spinnerGridSize);
         ArrayAdapter<CharSequence> adapterGridSize = ArrayAdapter.createFromResource(this,
-                R.array.grid_sizes, android.R.layout.simple_spinner_item);
-        adapterGridSize.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                R.array.grid_sizes, R.layout.gridspinner);
+        adapterGridSize.setDropDownViewResource(R.layout.gridspinner);
         spinnerGridSize.setAdapter(adapterGridSize);
 
 
 //        Spinner for the grid name
         spinnerGridName = findViewById(R.id.spinnerGridName);
         ArrayAdapter<CharSequence> adapterGridName = ArrayAdapter.createFromResource(this,
-                R.array.grid_names, android.R.layout.simple_spinner_item);
-        adapterGridName.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                R.array.grid_names, R.layout.gridspinner);
+        adapterGridName.setDropDownViewResource(R.layout.gridspinner);
         spinnerGridName.setAdapter(adapterGridName);
 
 //        This section is for the game mode
 
         spinnerGameMode = findViewById(R.id.spinnerGameMode);
         ArrayAdapter<CharSequence> adapterGameMode = ArrayAdapter.createFromResource(this,
-                R.array.game_modes, android.R.layout.simple_spinner_item);
-        adapterGameMode.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                R.array.game_modes, R.layout.gridspinner);
+        adapterGameMode.setDropDownViewResource(R.layout.gridspinner);
         spinnerGameMode.setAdapter(adapterGameMode);
 
     }
