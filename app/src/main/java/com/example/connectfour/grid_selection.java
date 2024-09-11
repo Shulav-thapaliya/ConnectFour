@@ -1,5 +1,6 @@
 package com.example.connectfour;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -61,7 +62,8 @@ public class grid_selection extends AppCompatActivity {
         Toast.makeText(this, "Settings: Mode=" + settings.getGameMode() +
                 ", Grid Size=" + settings.getGridSize() +
                 ", Theme=" + settings.getTheme(), Toast.LENGTH_LONG).show();
-
+        Intent intent = new Intent(grid_selection.this, gridlayout.class);
+        startActivity(intent);
     // You can now pass these settings to the next activity or use them to configure your game
     }
 

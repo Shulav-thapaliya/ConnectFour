@@ -15,6 +15,9 @@
         android:theme="@style/Theme.ConnectFour"
         tools:targetApi="31">
         <activity
+            android:name=".gridlayout"
+            android:exported="false" />
+        <activity
             android:name=".grid_selection"
             android:exported="false" />
         <activity
