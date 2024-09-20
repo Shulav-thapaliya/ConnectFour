@@ -33,14 +33,14 @@ public class gridlayout extends AppCompatActivity {
 
         statusTextView = findViewById(R.id.statusTextView);
         gridLayout = findViewById(R.id.gridLayout);
-        gameBoard = new GameBoard(6, 7); // 6 rows, 7 columns
+        gameBoard = new GameBoard(6, 7); // This section of the code has to be updated
         initializeGame();
     }
 
     private void initializeGame() {
         gridLayout.removeAllViews();
         gridLayout.setColumnCount(7); // 7 columns for Connect Four
-        for (int i = 0; i < 42; i++) { // 6 rows * 7 columns = 42 buttons
+        for (int i = 0; i < 42; i++) { // This section has to be updated
             Button button = new Button(this);
             button.setTag(i % 7);
             button.setBackgroundColor(Color.LTGRAY); // Default empty color
@@ -52,9 +52,10 @@ public class gridlayout extends AppCompatActivity {
             button.setOnClickListener(this::cellClicked);
             gridLayout.addView(button);
         }
-        statusTextView.setText("Player One's Turn");
+        statusTextView.setText("Start Game");
     }
 
+    @SuppressLint("SetTextI18n")
     private void cellClicked(View view) {
         int col = (int) view.getTag();
         boolean validMoveMade = false;
@@ -68,7 +69,7 @@ public class gridlayout extends AppCompatActivity {
                     button.setBackgroundColor(currentPlayer.getColor());
                     validMoveMade = true;
                     if (gameBoard.checkForWin(currentPlayer.getId())) {
-                        statusTextView.setText("Player " + (currentPlayer.getId() == 1 ? "One" : "Two") + " Wins!");
+                        statusTextView.setText("Game own" + currentPlayer.getId());
                         disableButtons();
                     }
                     break; // Exit the loop once the piece is placed

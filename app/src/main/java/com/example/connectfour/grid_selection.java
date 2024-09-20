@@ -13,6 +13,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.io.Serializable;
+
 public class grid_selection extends AppCompatActivity {
 
     private Spinner spinnerGridSize;
@@ -63,6 +65,7 @@ public class grid_selection extends AppCompatActivity {
                 ", Grid Size=" + settings.getGridSize() +
                 ", Theme=" + settings.getTheme(), Toast.LENGTH_LONG).show();
         Intent intent = new Intent(grid_selection.this, gridlayout.class);
+//        intent.putExtra("GameSettings", (Serializable) settings);
         startActivity(intent);
     // You can now pass these settings to the next activity or use them to configure your game
     }
